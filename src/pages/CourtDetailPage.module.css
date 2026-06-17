@@ -1,0 +1,323 @@
+@reference "../index.css";
+
+/* CourtDetailPage.module.css */
+
+.pageContainer {
+  @apply min-h-screen bg-dark-950;
+}
+
+.notFoundText {
+  @apply pt-24 text-center text-dark-400;
+}
+
+.heroSection {
+  @apply pt-16;
+}
+
+.heroContainer {
+  @apply relative h-64 md:h-80 bg-dark-800 overflow-hidden;
+}
+
+.heroImage {
+  @apply absolute inset-0 w-full h-full object-cover transition-opacity duration-300;
+}
+
+.heroPlaceholder {
+  @apply absolute inset-0 bg-gradient-to-br from-lime-400/10 to-emerald-600/10 flex items-center justify-center;
+}
+
+.heroPlaceholderIcon {
+  @apply text-[120px] text-white/5;
+}
+
+.heroOverlay {
+  @apply absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent;
+}
+
+.heroBottom {
+  @apply absolute bottom-6 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.heroBadgeContainer {
+  @apply flex items-end gap-3 pb-4;
+}
+
+.mainContent {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10 pb-16;
+}
+
+.contentGrid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-8;
+}
+
+.leftColumn {
+  @apply lg:col-span-2 space-y-8;
+}
+
+.venueCard {
+  @apply bg-dark-800/50 backdrop-blur-sm border border-dark-700/50 rounded-2xl transition-all duration-300 ease-out p-6;
+}
+
+.venueTitle {
+  @apply text-2xl md:text-3xl font-bold text-white mb-3;
+}
+
+.venueInfo {
+  @apply flex flex-wrap items-center gap-4 mb-4;
+}
+
+.venueInfoItem {
+  @apply flex items-center gap-1 text-dark-300;
+}
+
+.venueLocationIcon {
+  @apply text-lime-400;
+}
+
+.venueInfoText {
+  @apply text-sm;
+}
+
+.venueDescription {
+  @apply text-dark-300 text-sm leading-relaxed mb-4;
+}
+
+.venueAmenities {
+  @apply flex flex-wrap gap-2;
+}
+
+.amenityTag {
+  @apply px-3 py-1 text-xs rounded-lg bg-dark-700/80 text-dark-200 border border-dark-600/50;
+}
+
+.academySection {
+  @apply mt-6 p-4 bg-amber-500/5 border border-amber-500/20 rounded-xl;
+}
+
+.academyTitle {
+  @apply font-semibold text-amber-400 mb-3;
+}
+
+.academyGrid {
+  @apply grid grid-cols-2 gap-3 text-sm;
+}
+
+.academyLabel {
+  @apply text-dark-400;
+}
+
+.academyValue {
+  @apply text-white font-medium;
+}
+
+.academyBatch {
+  @apply col-span-2;
+}
+
+.academyTimings {
+  @apply flex flex-wrap gap-1.5 mt-1;
+}
+
+.academyTiming {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-400/10 text-blue-400 border border-blue-400/20;
+}
+
+.academyTrial {
+  @apply col-span-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-lime-400/10 text-lime-400 border border-lime-400/20;
+}
+
+.bookingCard {
+  @apply bg-dark-800/50 backdrop-blur-sm border border-dark-700/50 rounded-2xl transition-all duration-300 ease-out p-6;
+}
+
+.bookingTitle {
+  @apply text-xl font-bold text-white mb-1;
+}
+
+.bookingSubtitle {
+  @apply text-sm text-dark-400 mb-5;
+}
+
+.stepSection {
+  @apply mb-6;
+}
+
+.stepTitle {
+  @apply text-xs font-semibold text-dark-400 uppercase tracking-wider mb-3;
+}
+
+.courtContainer {
+  @apply flex gap-3 overflow-x-auto pb-2;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.courtContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.dateSection {
+  @apply mb-6 animate-slide-up;
+}
+
+.dateContainer {
+  @apply flex gap-2 overflow-x-auto pb-2;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dateContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.slotSection {
+  @apply animate-slide-up;
+}
+
+.emptyState {
+  @apply text-center py-8 text-dark-500;
+}
+
+.emptyStateIcon {
+  @apply text-4xl mx-auto mb-2 opacity-30;
+}
+
+.emptyStateText {
+  @apply text-sm;
+}
+
+.reviewsSection {
+  @apply mb-6;
+}
+
+.reviewsTitle {
+  @apply text-xl font-bold text-white mb-4;
+}
+
+.rightColumn {
+  @apply lg:col-span-1;
+}
+
+.stickyContainer {
+  @apply sticky top-20 space-y-4;
+}
+
+.priceCard {
+  @apply bg-dark-800/50 backdrop-blur-sm border border-dark-700/50 rounded-2xl transition-all duration-300 ease-out p-5 text-center;
+}
+
+.priceDisplay {
+  @apply text-3xl font-bold bg-gradient-to-r from-lime-400 to-emerald-400 bg-clip-text text-transparent mb-1;
+}
+
+.priceSubtitle {
+  @apply text-dark-400 text-sm;
+}
+
+.heroNavButton {
+  @apply absolute top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-dark-900/70 backdrop-blur-sm flex items-center justify-center text-white hover:bg-dark-900/90 transition-colors;
+}
+
+.dotButton {
+  @apply w-2 h-2 rounded-full transition-colors;
+}
+
+.activeDot {
+  @apply bg-lime-400;
+}
+
+.inactiveDot {
+  @apply bg-white/50 hover:bg-white/80;
+}
+
+.courtButton {
+  @apply flex flex-col items-center px-5 py-4 rounded-xl min-w-[130px] transition-all shrink-0 border;
+}
+
+.selectedCourt {
+  @apply bg-lime-400/10 border-lime-400/40 ring-2 ring-lime-400/20;
+}
+
+.unselectedCourt {
+  @apply bg-dark-800 border-dark-600 hover:border-dark-500;
+}
+
+.courtIcon {
+  @apply w-10 h-10 rounded-xl flex items-center justify-center mb-2;
+}
+
+.selectedIcon {
+  @apply bg-lime-400 text-dark-950;
+}
+
+.unselectedIcon {
+  @apply bg-dark-700 text-dark-300;
+}
+
+.courtName {
+  @apply text-sm font-semibold;
+}
+
+.selectedText {
+  @apply text-lime-400;
+}
+
+.unselectedText {
+  @apply text-white;
+}
+
+.courtSurface {
+  @apply text-xs text-dark-400 mt-0.5;
+}
+
+.courtPrice {
+  @apply text-xs font-medium mt-1;
+}
+
+.selectedPrice {
+  @apply text-lime-400;
+}
+
+.unselectedPrice {
+  @apply text-dark-300;
+}
+
+.dateButton {
+  @apply flex flex-col items-center px-4 py-3 rounded-xl min-w-[72px] transition-all shrink-0;
+}
+
+.selectedDate {
+  @apply bg-lime-400 text-dark-950;
+}
+
+.unselectedDate {
+  @apply bg-dark-800 text-dark-300 border border-dark-600 hover:border-dark-500;
+}
+
+.dateDayName {
+  @apply text-xs font-medium;
+}
+
+.dateDayNum {
+  @apply text-xl font-bold;
+}
+
+.dateMonth {
+  @apply text-xs;
+}
+
+.selectedCourtDisplay {
+  @apply mt-3 p-2 bg-lime-400/5 border border-lime-400/20 rounded-lg animate-slide-up;
+}
+
+.selectedCourtLabel {
+  @apply text-xs text-dark-400;
+}
+
+.selectedCourtInfo {
+  @apply text-sm font-semibold text-lime-400;
+}
+
+.dotContainer {
+  @apply absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex gap-1.5;
+}

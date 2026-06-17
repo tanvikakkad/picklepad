@@ -1,0 +1,100 @@
+@reference "../../index.css"; 
+.root {
+  @apply fixed inset-0 z-50 flex items-center justify-center px-4;
+}
+
+.overlay {
+  @apply absolute inset-0 bg-dark-950/80 backdrop-blur-sm;
+}
+
+.modal {
+  @apply relative p-6 max-w-md w-full animate-scale-in border-lime-400/20;
+}
+
+.closeBtn {
+  @apply absolute top-4 right-4 text-dark-400 hover:text-white;
+}
+
+.successIconContainer {
+  @apply text-center mb-6;
+}
+
+.successIconWrapper {
+  @apply w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center mx-auto mb-3;
+}
+
+.heading {
+  @apply text-xl font-bold text-white;
+}
+
+.subtext {
+  @apply text-dark-400 text-sm mt-1;
+}
+
+.detailsSection {
+  @apply space-y-3 bg-dark-800/50 rounded-xl p-4 mb-5;
+}
+
+.row {
+  @apply flex justify-between text-sm;
+}
+
+.rowCenter {
+  @apply flex justify-between text-sm items-center;
+}
+
+.label {
+  @apply text-dark-400;
+}
+
+.value {
+  @apply text-white font-medium;
+}
+
+.courtValue {
+  @apply text-lime-400 font-medium flex items-center gap-1;
+}
+
+.amountValue {
+  @apply text-lime-400 font-bold;
+}
+
+.bookingIdLabel {
+  @apply text-dark-400 text-xs;
+}
+
+.bookingId {
+  @apply text-white text-xs font-mono mt-0.5;
+}
+
+.copyBtn {
+  @apply p-2 rounded-lg hover:bg-dark-700 text-dark-400 hover:text-lime-400 transition-colors;
+}
+
+.iconXL {
+  @apply text-xl;
+}
+
+.iconLG {
+  @apply text-lg;
+}
+
+.iconXS {
+  @apply text-xs;
+}
+
+.checkIcon {
+  @apply text-emerald-400 text-3xl;
+}
+
+.borderTop {
+  @apply border-t border-dark-600 pt-3;
+}
+
+.itemsBetween {
+  @apply flex items-center justify-between;
+}
+
+.doneBtn {
+  @apply w-full text-sm;
+}

@@ -1,0 +1,141 @@
+@reference "../index.css";
+
+.pageContainer {
+  @apply min-h-screen flex;
+}
+
+.leftSide {
+  @apply hidden lg:flex lg:w-[50%] bg-lime-400 relative flex-col justify-between py-10 px-16 xl:px-20 overflow-hidden;
+}
+
+.logoContainer {
+  @apply flex items-center gap-2 z-10;
+}
+
+.logoText {
+  @apply text-dark-950 tracking-widest text-2xl uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+  font-size: 36px;
+}
+
+.logoBadge {
+  @apply bg-dark-950 text-lime-400 text-xs px-2 py-0 rounded;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  font-size: 32px;
+}
+
+.titleContainer {
+  @apply z-10 space-y-1;
+}
+
+.titleLine {
+  @apply text-dark-950 uppercase leading-none;
+  font-size: clamp(56px, 7vw, 96px);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+}
+
+.titleLineItalic {
+  @apply text-dark-950 italic leading-none;
+  font-size: clamp(56px, 7vw, 96px);
+  font-weight: 400;
+  font-family: "Instrument Serif", serif;
+}
+
+.footerText {
+  @apply z-10 text-dark-700 text-xl tracking-wide;
+}
+
+.heart {
+  @apply text-red-500;
+}
+
+.rightSide {
+  @apply flex-1 bg-dark-950 flex items-center justify-center px-12 xl:px-20 py-12 relative;
+}
+
+.ambientGlows {
+  @apply fixed inset-0 overflow-hidden pointer-events-none;
+}
+
+.glowTopRight {
+  @apply absolute -top-40 -right-40 w-80 h-80 bg-lime-400/5 rounded-full blur-3xl;
+}
+
+.glowBottomLeft {
+  @apply absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-400/5 rounded-full blur-3xl;
+}
+
+.formContainer {
+  @apply w-full max-w-md relative;
+}
+
+.mobileHeader {
+  @apply lg:hidden text-center mb-8;
+}
+
+.mobileTitle {
+  @apply text-2xl font-bold text-white;
+}
+
+.mobileTitleHighlight {
+  @apply text-lime-400;
+}
+
+.mobileSubtitle {
+  @apply text-dark-400 text-sm mt-1;
+}
+
+.tabsContainer {
+  @apply flex bg-dark-800 rounded-xl p-1 mb-6 border border-dark-700;
+}
+
+.tab {
+  @apply flex-1 py-2.5 rounded-lg text-sm font-medium transition-all bg-transparent border-none cursor-pointer;
+}
+
+.tabActive {
+  @apply bg-lime-400 text-dark-950;
+}
+
+.tabInactive {
+  @apply text-dark-400;
+}
+
+.tabInactive:hover {
+  @apply text-white;
+}
+
+.formHeader {
+  @apply mb-6;
+}
+
+.formTitle {
+  @apply text-white text-2xl font-black uppercase tracking-tight;
+}
+
+.formSubtitle {
+  @apply text-dark-400 text-sm mt-1;
+}
+
+.formCard {
+  @apply bg-dark-800/50 backdrop-blur-sm border border-dark-700/50 rounded-2xl p-6 animate-fade-in;
+  border: 1px solid color-mix(in oklab, var(--color-dark-700) 100%, transparent);
+  background-color: color-mix(in oklab, var(--color-dark-900) 70%, transparent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.footer {
+  @apply text-center text-xs text-dark-500 mt-6;
+}
+
+.footerLink {
+  @apply text-lime-400 bg-transparent border-none cursor-pointer p-0;
+}
+
+.footerLink:hover {
+  @apply underline;
+}

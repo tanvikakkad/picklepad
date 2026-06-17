@@ -1,0 +1,25 @@
+@reference "../../index.css";
+
+.container {
+  @apply flex flex-col items-center justify-center py-16 px-6 text-center;
+}
+
+.iconCircle {
+  @apply w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center mb-4;
+}
+
+.icon {
+  @apply text-lime-400 text-3xl;
+}
+
+.title {
+  @apply text-white font-semibold text-lg mb-1;
+}
+
+.description {
+  @apply text-zinc-400 text-sm max-w-xs;
+}
+
+.button {
+  @apply mt-5 px-5 py-2 bg-lime-400 text-zinc-900 font-semibold text-sm rounded-lg hover:bg-lime-300 transition-colors;
+}

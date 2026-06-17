@@ -1,0 +1,85 @@
+@reference "../../index.css"; 
+
+.bookingCard {
+  @apply rounded-2xl border border-dark-700 bg-dark-900/80 px-5 py-4 shadow-md shadow-black/30;
+}
+
+.headerRow {
+  @apply flex items-start justify-between gap-4;
+}
+
+.venueBadgeContainer {
+  @apply flex items-center gap-2 flex-wrap;
+}
+
+.venueName {
+  @apply text-base font-semibold text-white;
+}
+
+.statusBadge {
+  @apply rounded-full px-2.5 py-0.5 text-[11px] font-medium capitalize;
+}
+
+.upcomingBadge {
+  @apply bg-lime-500/10 text-lime-400 border border-lime-500/30;
+}
+
+.completedBadge {
+  @apply bg-emerald-500/10 text-emerald-300 border border-emerald-500/30;
+}
+
+.cancelledBadge {
+  @apply bg-red-500/10 text-red-300 border border-red-500/30;
+}
+
+.priceContainer {
+  @apply text-right shrink-0;
+}
+
+.priceLabel {
+  @apply text-base font-semibold text-lime-400;
+}
+
+.dateShort {
+  @apply text-[11px] text-dark-400 mt-0.5;
+}
+
+.courtLabel {
+  @apply mt-1 text-xs font-medium text-lime-400/80 flex items-center gap-1.5;
+}
+
+.iconShrink {
+  @apply shrink-0;
+}
+
+.detailsList {
+  @apply mt-3 space-y-1.5 text-xs text-dark-300;
+}
+
+.detailItem {
+  @apply flex items-center gap-2;
+}
+
+.iconDetail {
+  @apply shrink-0 text-dark-400;
+}
+
+.footerContainer {
+  @apply mt-4;
+}
+
+.footerBtn {
+  @apply rounded-full px-4 py-1.5 text-xs font-semibold transition;
+}
+
+.primaryBtn {
+  @apply bg-lime-500 text-dark-950 hover:bg-lime-400;
+}
+
+.dangerBtn {
+  @apply border border-red-500/60 text-red-400 hover:bg-red-500/10;
+}
+
+.ghostBtn {
+  @apply border border-dark-600 text-dark-100 hover:border-lime-400 hover:text-lime-300;
+}

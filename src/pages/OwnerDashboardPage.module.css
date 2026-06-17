@@ -1,0 +1,242 @@
+    @reference "../index.css";
+
+.container {
+  @apply min-h-screen bg-dark-950 text-dark-50 pt-16;
+}
+
+.wrapper {
+  @apply mx-auto max-w-6xl px-4 pb-10 pt-8 sm:px-6;
+}
+
+.header {
+  @apply flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between;
+}
+
+.headerContent {
+  @apply space-y-1 min-w-0;
+}
+
+.title {
+  @apply text-2xl font-semibold text-white sm:text-3xl md:text-4xl;
+}
+
+.subtitle {
+  @apply text-sm text-dark-300;
+}
+
+.addButton {
+  @apply shrink-0 rounded-lg bg-lime-400 px-4 py-2.5 text-sm font-semibold text-dark-950 transition-colors hover:bg-lime-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-950;
+}
+
+.statsGrid {
+  @apply mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:gap-4 sm:grid-cols-2 lg:grid-cols-5;
+}
+
+.statCard {
+  @apply min-w-0 rounded-2xl border border-dark-800 bg-dark-900/80 px-4 py-3 sm:px-5 sm:py-4;
+}
+
+.statIcon {
+  @apply text-dark-400 text-lg sm:text-xl;
+}
+
+.statValue {
+  @apply mt-1 truncate text-2xl font-semibold text-white sm:text-3xl;
+}
+
+.statLabel {
+  @apply text-xs font-medium text-dark-400;
+}
+
+.tabsWrapper {
+  @apply mt-6 flex flex-wrap gap-1 border-b border-dark-800 sm:mt-8;
+}
+
+.tab {
+  @apply rounded-t-lg px-4 py-2.5 text-sm font-medium transition-colors;
+}
+
+.tabActive {
+  @apply bg-lime-400 text-dark-950;
+}
+
+.tabInactive {
+  @apply text-dark-300 hover:bg-dark-800 hover:text-white;
+}
+
+.content {
+  @apply mt-4 sm:mt-6;
+}
+
+.sectionContainer {
+  @apply space-y-6;
+}
+
+.sectionHeader {
+  @apply flex flex-wrap items-center justify-between gap-3;
+}
+
+.sectionTitle {
+  @apply text-lg font-semibold text-white;
+}
+
+.sectionTitleSmall {
+  @apply text-base font-semibold text-white sm:text-lg;
+}
+
+.venuesGrid {
+  @apply grid gap-4 sm:grid-cols-2 lg:gap-5;
+}
+
+.filtersContainer {
+  @apply flex flex-wrap items-center gap-3 sm:gap-4;
+}
+
+.filterLabel {
+  @apply sr-only;
+}
+
+.filterSelect {
+  @apply rounded-lg border border-dark-700 bg-dark-800 px-3 py-2 text-sm text-white focus:border-lime-500 focus:outline-none;
+}
+
+.bookingsContainer {
+  @apply space-y-4 sm:space-y-5;
+}
+
+.pricingHeader {
+  @apply flex flex-wrap items-center gap-2;
+}
+
+.suggestionBadge {
+  @apply rounded-full bg-lime-400/20 px-2.5 py-0.5 text-xs font-medium text-lime-400;
+}
+
+.pricingGrid {
+  @apply grid gap-4 sm:grid-cols-2;
+}
+
+.revenueCard {
+  @apply rounded-xl border border-dark-800 bg-dark-900/80 p-4 sm:p-5;
+}
+
+.revenueLabel {
+  @apply text-sm text-dark-400 mb-1;
+}
+
+.revenueValue {
+  @apply text-2xl font-semibold text-lime-400;
+}
+
+.revenueCount {
+  @apply text-xs text-dark-500 mt-1;
+}
+
+.breakdownTitle {
+  @apply text-sm font-medium text-dark-300 mb-3;
+}
+
+.breakdownList {
+  @apply space-y-2 sm:space-y-3;
+}
+
+.venueRevenueCard {
+  @apply flex flex-wrap items-center justify-between gap-3 rounded-xl border border-dark-800 bg-dark-900/80 px-4 py-3 min-w-0;
+}
+
+.venueRevenueInfo {
+  @apply min-w-0 flex-1;
+}
+
+.venueRevenueName {
+  @apply truncate font-medium text-white;
+}
+
+.venueRevenueDetails {
+  @apply text-xs text-dark-400;
+}
+
+.venueRevenueAmount {
+  @apply text-right;
+}
+
+.venueRevenueValue {
+  @apply font-semibold text-lime-400;
+}
+
+.modal {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 sm:p-6;
+}
+
+.modalContent {
+  @apply w-full max-w-sm rounded-xl border border-dark-800 bg-dark-900 p-5 shadow-xl sm:p-6;
+}
+
+.modalText {
+  @apply text-white;
+}
+
+.modalActions {
+  @apply mt-4 flex justify-end gap-2;
+}
+
+.cancelButton {
+  @apply rounded-lg border border-dark-600 bg-dark-800 px-4 py-2 text-sm font-medium text-white hover:bg-dark-700;
+}
+
+.deleteButton {
+  @apply rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-500;
+}
+
+/* VenueCard styles */
+.venueCard {
+  @apply rounded-xl border border-dark-800 bg-dark-900/80 p-5;
+}
+
+.venueCardHeader {
+  @apply flex flex-wrap items-start justify-between gap-3;
+}
+
+.venueCardContent {
+  @apply min-w-0 flex-1;
+}
+
+.venueCardTitleWrapper {
+  @apply flex flex-wrap items-center gap-2;
+}
+
+.venueCardTitle {
+  @apply text-xl font-semibold text-white;
+}
+
+.venueCardBadge {
+  @apply rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+
+.venueCardBadgePublished {
+  @apply bg-lime-400/20 text-lime-400;
+}
+
+.venueCardBadgeUnpublished {
+  @apply bg-dark-600 text-dark-300;
+}
+
+.venueCardDetails {
+  @apply mt-1 text-sm text-dark-400;
+}
+
+.venueCardActions {
+  @apply flex flex-shrink-0 items-center gap-1;
+}
+
+.venueActionButton {
+  @apply rounded-lg p-2 text-dark-400 hover:bg-dark-800 hover:text-white;
+}
+
+.venueActionButtonDelete {
+  @apply rounded-lg p-2 text-dark-400 hover:bg-dark-800 hover:text-red-400;
+}
+
+.venueActionIcon {
+  @apply h-5 w-5;
+}

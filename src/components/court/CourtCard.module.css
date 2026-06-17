@@ -1,0 +1,129 @@
+@reference "../../index.css";
+
+.link {
+  @apply block;
+}
+
+.card {
+  @apply overflow-hidden;
+}
+
+.imageContainer {
+  @apply relative h-48 bg-dark-700 overflow-hidden;
+}
+
+.image {
+  @apply absolute inset-0 w-full h-full object-cover transition-transform duration-300;
+}
+
+.link:hover .image {
+  @apply scale-105;
+}
+
+.imagePlaceholder {
+  @apply absolute inset-0 flex items-center justify-center;
+  background: linear-gradient(to bottom right, rgba(200, 241, 53, 0.2), rgba(16, 185, 129, 0.2));
+}
+
+.placeholderIcon {
+  @apply text-6xl opacity-30;
+}
+
+.wishlistBtn {
+  @apply absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center
+         transition-all z-10 border-none cursor-pointer;
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.wishlistBtn:hover {
+  @apply scale-110;
+}
+
+.wishlistIconActive {
+  @apply text-red-400 text-lg;
+}
+
+.wishlistIconInactive {
+  @apply text-white text-lg;
+}
+
+.badgePosition {
+  @apply absolute top-3 left-3;
+}
+
+.priceBadge {
+  @apply absolute bottom-3 right-3 font-semibold;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.courtCountBadge {
+  @apply absolute bottom-3 left-3 flex items-center gap-1 px-2 py-1 rounded-lg
+         text-white text-xs font-medium;
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.courtCountIcon {
+  @apply text-lime-400;
+}
+
+.content {
+  @apply p-4;
+}
+
+.header {
+  @apply flex items-start justify-between gap-2 mb-2;
+}
+
+.title {
+  @apply font-semibold text-white transition-colors line-clamp-1;
+}
+
+.link:hover .title {
+  @apply text-lime-400;
+}
+
+.ratingWrapper {
+  @apply flex items-center gap-1 shrink-0;
+}
+
+.ratingStar {
+  @apply text-amber-400 text-sm;
+}
+
+.ratingValue {
+  @apply text-sm font-medium text-white;
+}
+
+.ratingCount {
+  @apply text-xs text-dark-400;
+}
+
+.location {
+  @apply flex items-center gap-1 text-dark-400 text-sm mb-3;
+}
+
+.locationIcon {
+  @apply text-xs shrink-0;
+}
+
+.locationText {
+  @apply line-clamp-1;
+}
+
+.amenities {
+  @apply flex flex-wrap gap-1.5;
+}
+
+.amenityTag {
+  @apply px-2 py-0.5 text-xs rounded-md text-dark-300;
+  background: rgba(48, 48, 48, 0.8);
+  border: 1px solid rgba(64, 64, 64, 0.5);
+}
+
+.amenityMore {
+  @apply px-2 py-0.5 text-xs rounded-md text-dark-400;
+  background: rgba(48, 48, 48, 0.8);
+}

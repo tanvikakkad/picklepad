@@ -1,0 +1,33 @@
+@reference "../../index.css";
+
+.spinnerWrapper {
+  @apply flex flex-col items-center justify-center gap-3;
+}
+
+.spinner {
+  @apply rounded-full border-lime-400 border-t-transparent animate-spin;
+}
+
+.sm {
+  @apply w-5 h-5 border-2;
+}
+
+.md {
+  @apply w-9 h-9 border-[3px];
+}
+
+.lg {
+  @apply w-14 h-14 border-4;
+}
+
+.loadingText {
+  @apply text-sm text-zinc-300;
+}
+
+.fullScreen {
+  @apply fixed inset-0 bg-zinc-950/80 backdrop-blur-sm flex items-center justify-center z-50;
+}
+
+.container {
+  @apply flex items-center justify-center w-full py-10;
+}

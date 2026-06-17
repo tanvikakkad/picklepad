@@ -1,0 +1,45 @@
+@reference "../../index.css";
+
+.root {
+  @apply relative flex flex-col items-start gap-1 rounded-2xl border px-5 py-4 text-left transition-all duration-200 w-full min-w-0;
+}
+
+.default {
+  @apply border-dark-800 bg-dark-900/80 hover:border-lime-500/40 hover:bg-dark-900;
+}
+
+.active {
+  @apply border-lime-400/60 bg-lime-900/30;
+}
+
+.interactive {
+  @apply cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime-400 focus-visible:ring-offset-2 focus-visible:ring-offset-dark-950;
+}
+
+.icon {
+  @apply text-xl mb-1;
+}
+
+.iconDefault {
+  @apply text-dark-400;
+}
+
+.iconActive {
+  @apply text-lime-300;
+}
+
+.value {
+  @apply min-w-0 truncate text-3xl font-semibold text-white leading-none;
+}
+
+.label {
+  @apply text-xs font-medium;
+}
+
+.labelDefault {
+  @apply text-dark-400;
+}
+
+.labelActive {
+  @apply text-lime-300;
+}

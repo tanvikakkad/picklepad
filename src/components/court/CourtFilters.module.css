@@ -1,0 +1,133 @@
+@reference "../../index.css";
+
+.container {
+  @apply space-y-6;
+}
+
+.header {
+  @apply flex items-center justify-between;
+}
+
+.headerTitle {
+  @apply font-semibold text-white;
+}
+
+.headerActions {
+  @apply flex items-center gap-2;
+}
+
+.resetBtn {
+  @apply text-xs text-lime-400 bg-transparent border-none cursor-pointer;
+}
+
+.resetBtn:hover {
+  @apply underline;
+}
+
+.closeBtn {
+  @apply p-1 text-dark-400 bg-transparent border-none cursor-pointer;
+}
+
+.closeBtn:hover {
+  @apply text-white;
+}
+
+.sectionLabel {
+  @apply block text-sm font-medium text-dark-300 mb-2;
+}
+
+.priceValue {
+  @apply text-lime-400;
+}
+
+.chipGrid {
+  @apply flex flex-wrap gap-1.5;
+}
+
+.chipRow {
+  @apply flex gap-2;
+}
+
+.chip {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+         bg-dark-700 text-dark-300 border border-dark-600 cursor-pointer;
+}
+
+.chip:hover {
+  @apply bg-dark-600;
+}
+
+.chipActive {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+         bg-lime-400 text-dark-950 border border-lime-400 cursor-pointer;
+}
+
+.ratingChip {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+         bg-dark-700 text-dark-300 border border-dark-600 cursor-pointer;
+}
+
+.ratingChip:hover {
+  @apply bg-dark-600;
+}
+
+.ratingChipActive {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer;
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.typeChipCourts {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+         bg-dark-700 text-dark-400 border border-dark-600 cursor-pointer;
+}
+
+.typeChipCourtsActive {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer;
+  background: rgba(200, 241, 53, 0.15);
+  color: #c8f135;
+  border: 1px solid rgba(200, 241, 53, 0.3);
+}
+
+.typeChipAcademies {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+         bg-dark-700 text-dark-400 border border-dark-600 cursor-pointer;
+}
+
+.typeChipAcademiesActive {
+  @apply px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer;
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.amenityChip {
+  @apply px-2.5 py-1 rounded-lg text-xs font-medium transition-all
+         bg-dark-700 text-dark-400 border border-dark-600 cursor-pointer;
+}
+
+.amenityChip:hover {
+  @apply bg-dark-600;
+}
+
+.amenityChipActive {
+  @apply px-2.5 py-1 rounded-lg text-xs font-medium transition-all cursor-pointer;
+  background: rgba(200, 241, 53, 0.15);
+  color: #c8f135;
+  border: 1px solid rgba(200, 241, 53, 0.3);
+}
+
+.rangeInput {
+  @apply w-full h-1.5 bg-dark-600 rounded-lg cursor-pointer;
+  appearance: none;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  @apply w-4 h-4 rounded-full bg-lime-400 cursor-pointer;
+  appearance: none;
+}
+
+.rangeLabels {
+  @apply flex justify-between text-xs text-dark-500 mt-1;
+}

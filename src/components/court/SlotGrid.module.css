@@ -1,0 +1,93 @@
+@reference "../../index.css";
+
+.legend {
+  @apply flex items-center gap-4 mb-4;
+}
+
+.legendItem {
+  @apply flex items-center gap-1.5;
+}
+
+.legendDotAvailable {
+  @apply w-2.5 h-2.5 rounded-full bg-lime-400;
+}
+
+.legendDotSelected {
+  @apply w-2.5 h-2.5 rounded-full bg-blue-400;
+}
+
+.legendDotBooked {
+  @apply w-2.5 h-2.5 rounded-full bg-red-500;
+}
+
+.legendDotPast {
+  @apply w-2.5 h-2.5 rounded-full bg-dark-600;
+}
+
+.legendLabel {
+  @apply text-dark-400 text-xs;
+}
+
+.grid {
+  @apply grid grid-cols-4 gap-2;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    @apply grid-cols-5;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    @apply grid-cols-6;
+  }
+}
+
+.slot {
+  @apply rounded-lg p-2.5 text-center;
+}
+
+.slotPast {
+  @apply bg-dark-800 text-dark-500 cursor-not-allowed;
+  border: 1px solid var(--color-dark-700);
+}
+
+.slotBooked {
+  @apply text-red-400 cursor-not-allowed;
+  background: rgba(127, 29, 29, 0.4);
+  border: 1px solid rgba(153, 27, 27, 0.5);
+}
+
+.slotSelected {
+  @apply text-blue-300 cursor-pointer;
+  background: rgba(30, 58, 138, 0.6);
+  border: 2px solid #60a5fa;
+}
+
+.slotAvailable {
+  @apply text-emerald-400 cursor-pointer;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.slotAvailable:hover {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #34d399;
+}
+
+.slotTime {
+  @apply text-sm font-semibold;
+}
+
+.slotEndTime {
+  @apply text-xs opacity-60;
+}
+
+.slotLabel {
+  @apply text-xs mt-1 font-medium;
+}
+
+.selectionHint {
+  @apply text-dark-500 text-xs mt-3;
+}

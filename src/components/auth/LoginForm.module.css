@@ -1,0 +1,70 @@
+@reference "../../index.css";
+
+.form {
+  @apply flex flex-col gap-5;
+}
+
+.fieldGroup {
+  @apply flex flex-col;
+}
+
+.label {
+  @apply block text-sm font-medium text-dark-200 mb-1.5;
+}
+
+.inputWrapper {
+  @apply relative;
+}
+
+.inputIcon {
+  @apply absolute left-3 top-1/2 -translate-y-1/2 text-dark-400;
+}
+
+.input {
+  @apply w-full bg-dark-800/80 border border-dark-700 rounded-xl px-3 py-2.5 pl-10
+         text-sm text-dark-100 outline-none
+         transition-all duration-200;
+}
+
+.input::placeholder {
+  @apply text-dark-500;
+}
+
+.input:focus {
+  @apply border-lime-400;
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-lime-400) 20%, transparent);
+}
+
+.error {
+  @apply text-red-400 text-xs mt-1;
+}
+
+.submitBtn {
+  @apply w-full inline-flex items-center justify-center border-none rounded-xl
+         bg-lime-400 text-dark-950 text-sm font-semibold py-3 px-4
+         cursor-pointer transition-all duration-200;
+}
+
+.submitBtn:hover {
+  @apply bg-lime-500;
+}
+
+.submitBtn:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+.submitBtn:disabled:hover {
+  @apply bg-lime-400;
+}
+
+.demoInfo {
+  @apply text-center;
+}
+
+.demoText {
+  @apply text-xs text-dark-400;
+}
+
+.demoHighlight {
+  @apply text-dark-300;
+}

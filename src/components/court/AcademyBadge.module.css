@@ -1,0 +1,33 @@
+@reference "../../index.css";
+
+.badge {
+  @apply inline-flex items-center gap-1.5 rounded-full font-semibold
+         text-xs text-amber-400;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(251, 191, 36, 0.6);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  ring: 1px inset rgba(255, 255, 255, 0.1);
+}
+
+.badgeSmall {
+  @apply px-2.5 py-1;
+}
+
+.badgeLarge {
+  @apply px-3.5 py-1.5;
+}
+
+.iconSmall {
+  @apply text-xs;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+.iconLarge {
+  @apply text-sm;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+.text {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}

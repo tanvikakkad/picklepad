@@ -1,0 +1,62 @@
+@reference "../../index.css";
+/* BookingSummary.module.css */
+
+.container {
+  @apply p-5;
+}
+
+.heading {
+  @apply text-white font-semibold mb-4;
+}
+
+.subtext {
+  @apply text-dark-400 text-xs mb-4;
+}
+
+.slotList {
+  @apply space-y-2 mb-4;
+}
+
+.slotRow {
+  @apply flex justify-between text-sm;
+}
+
+.slotTime {
+  @apply text-dark-300;
+}
+
+.slotPrice {
+  @apply text-white font-medium;
+}
+
+.totalWrapper {
+  @apply border-t border-dark-700 pt-3 mb-4;
+}
+
+.totalRow {
+  @apply flex justify-between items-center;
+}
+
+.totalLabel {
+  @apply text-dark-400 text-sm;
+}
+
+.totalValue {
+  @apply text-lime-400 font-bold text-xl;
+}
+
+.totalMeta {
+  @apply text-dark-500 text-xs mt-1;
+}
+
+.buttonRow {
+  @apply flex gap-2;
+}
+
+.clearBtn {
+  @apply flex-1 py-2.5 rounded-lg bg-dark-700 text-dark-300 text-sm font-medium hover:bg-dark-600 transition-colors;
+}
+
+.confirmBtn {
+  @apply flex-1 py-2.5 rounded-lg text-sm font-bold;
+}

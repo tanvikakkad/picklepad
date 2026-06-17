@@ -1,0 +1,61 @@
+@reference "../index.css";
+
+.container {
+  @apply min-h-screen bg-dark-950 text-dark-50 pt-16;
+}
+
+.wrapper {
+  @apply mx-auto flex max-w-6xl flex-col gap-6 px-4 pb-10 pt-8 sm:gap-8 sm:px-6;
+}
+
+.header {
+  @apply space-y-1 min-w-0;
+}
+
+.title {
+  @apply text-2xl font-semibold text-white sm:text-3xl md:text-4xl;
+}
+
+.userName {
+  @apply text-lime-400;
+}
+
+.subtitle {
+  @apply text-sm text-dark-300;
+}
+
+.statsGrid {
+  @apply grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4;
+}
+
+.statCard {
+  @apply min-w-0;
+}
+
+.tabsWrapper {
+  @apply flex flex-wrap gap-1 border-b border-dark-800 -mb-px;
+}
+
+.tab {
+  @apply rounded-t-lg px-3 py-2 text-xs font-medium transition-colors sm:px-4 sm:py-2.5 sm:text-sm;
+}
+
+.tabActive {
+  @apply bg-lime-400 text-dark-950;
+}
+
+.tabInactive {
+  @apply text-dark-300 hover:bg-dark-800 hover:text-white;
+}
+
+.content {
+  @apply min-h-[200px];
+}
+
+.wishlistGrid {
+  @apply grid gap-4 sm:grid-cols-2 lg:gap-5;
+}
+
+.bookingsContainer {
+  @apply space-y-4 sm:space-y-5;
+}

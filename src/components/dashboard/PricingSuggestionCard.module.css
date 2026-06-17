@@ -1,0 +1,106 @@
+@reference "../../index.css";
+
+.card {
+  @apply p-4 border border-dark-700 rounded-lg bg-dark-800/50 backdrop-blur-sm;
+  @apply hover:border-dark-600 transition-colors;
+}
+
+.header {
+  @apply flex items-start justify-between gap-3 mb-3;
+}
+
+.typeLabel {
+  @apply flex items-center gap-2;
+}
+
+.typeIcon {
+  @apply text-xl;
+}
+
+.typeIconEmerald {
+  @apply text-emerald-400;
+}
+
+.typeIconAmber {
+  @apply text-amber-400;
+}
+
+.typeIconBlue {
+  @apply text-blue-400;
+}
+
+.typeIconPurple {
+  @apply text-purple-400;
+}
+
+.typeText {
+  @apply text-xs font-medium text-dark-300;
+}
+
+.badge {
+  @apply text-xs px-2 py-1 rounded-full font-medium;
+}
+
+.badgeIncrease {
+  @apply bg-emerald-400/10 text-emerald-400 border border-emerald-400/20;
+}
+
+.badgeDecrease {
+  @apply bg-amber-400/10 text-amber-400 border border-amber-400/20;
+}
+
+.content {
+  @apply mb-3;
+}
+
+.slot {
+  @apply text-sm font-medium text-white mb-1;
+}
+
+.reason {
+  @apply text-xs text-dark-400 leading-relaxed;
+}
+
+.priceContainer {
+  @apply flex items-center gap-3 mb-3 text-sm;
+}
+
+.priceBlock {
+  @apply flex flex-col;
+}
+
+.priceLabel {
+  @apply text-dark-500 text-xs;
+}
+
+.currentPrice {
+  @apply text-dark-300 font-medium;
+}
+
+.suggestedPrice {
+  @apply text-lime-400 font-bold;
+}
+
+.arrow {
+  @apply text-dark-600;
+}
+
+.impact {
+  @apply text-xs text-dark-500 mb-3 italic;
+}
+
+.actions {
+  @apply flex gap-2;
+}
+
+.btnPrimary {
+  @apply text-xs px-3 py-1.5 flex-1;
+  @apply bg-lime-500 hover:bg-lime-600 text-dark-900 font-medium rounded-lg;
+  @apply transition-colors;
+}
+
+.btnSecondary {
+  @apply text-xs px-3 py-1.5 flex-1;
+  @apply bg-dark-700 hover:bg-dark-600 text-dark-300 font-medium rounded-lg;
+  @apply transition-colors;
+}

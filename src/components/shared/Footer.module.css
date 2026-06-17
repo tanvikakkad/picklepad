@@ -1,0 +1,97 @@
+@reference "../../index.css";
+
+.footer {
+  @apply bg-dark-900 border-t border-dark-700/50;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.grid {
+  @apply py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10;
+}
+
+.brandSection {
+  @apply space-y-4;
+}
+
+.logoLink {
+  @apply flex items-center gap-2 w-fit;
+}
+
+.logoBox {
+  @apply w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center transition-transform;
+}
+
+.logoLink:hover .logoBox {
+  transform: scale(1.1);
+}
+
+.logoText {
+  @apply text-xl font-bold text-white;
+}
+
+.highlight {
+  @apply text-lime-400;
+}
+
+.tagline {
+  @apply text-dark-400 text-sm leading-relaxed max-w-xs;
+}
+
+.liveStatus {
+  @apply flex items-center gap-2;
+}
+
+.liveDot {
+  @apply w-2 h-2 rounded-full bg-lime-400 animate-pulse;
+}
+
+.liveText {
+  @apply text-xs text-lime-400 font-medium;
+}
+
+.sectionTitle {
+  @apply text-white font-semibold text-sm uppercase tracking-wider mb-4;
+}
+
+.linkList {
+  @apply space-y-3;
+}
+
+.link {
+  @apply text-dark-400 text-sm hover:text-lime-400 transition-colors;
+}
+
+.contactItem {
+  @apply flex items-center gap-2.5;
+}
+
+.contactIcon {
+  @apply text-lime-400 text-base shrink-0;
+}
+
+.contactText {
+  @apply text-dark-400 text-sm;
+}
+
+.divider {
+  @apply border-t border-dark-700/50;
+}
+
+.bottomBar {
+  @apply py-6 flex flex-col sm:flex-row items-center justify-between gap-4;
+}
+
+.copyright {
+  @apply text-dark-500 text-xs;
+}
+
+.madeWith {
+  @apply text-dark-600 text-xs;
+}
+
+.heart {
+  @apply text-red-400;
+}

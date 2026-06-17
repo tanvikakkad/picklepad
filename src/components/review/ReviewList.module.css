@@ -1,0 +1,37 @@
+@reference "../../index.css";
+
+.listContainer {
+  @apply space-y-4;
+}
+
+.reviewCard {
+  @apply bg-dark-800/50 backdrop-blur-sm border border-dark-700/50 rounded-2xl p-4;
+  border: 1px solid color-mix(in oklab, var(--color-dark-700) 100%, transparent);
+  background-color: color-mix(in oklab, var(--color-dark-900) 70%, transparent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.cardHeader {
+  @apply flex items-start justify-between mb-2;
+}
+
+.userInfo {
+  @apply flex items-center gap-3;
+}
+
+.userAvatar {
+  @apply w-9 h-9 rounded-full bg-gradient-to-br from-lime-400 to-emerald-500 flex items-center justify-center text-sm font-bold text-dark-950;
+}
+
+.userName {
+  @apply text-sm font-medium text-white;
+}
+
+.timeAgo {
+  @apply text-xs text-dark-500;
+}
+
+.comment {
+  @apply text-sm text-dark-300 leading-relaxed;
+}
